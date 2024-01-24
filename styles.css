@@ -81,7 +81,7 @@ h2 {
   grid-template-columns: 1fr;
 }
 
-.produto img {
+img, source {
   width: 100%;
 }
 
