@@ -33,6 +33,14 @@ h1 {
   align-items: center;
 }
 
+.navBarFooter {
+  margin: 20px 0;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .textNav {
   text-decoration: none;
   color: inherit;
@@ -111,11 +119,12 @@ footer {
 /*media size adaptations to tablets*/
 @media screen and (min-width: 641px) and (max-width: 1023px) {
   .container {
-    padding: 0 60px;
+    padding: auto 60px;
   }
   #areaProdutos {
     grid-template-columns: repeat(2, 47.5%);
     gap: 5%;
+    margin-bottom: 60px;
   }
 
   .btnCarrinho {
