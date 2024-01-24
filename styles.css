@@ -6,6 +6,12 @@
   scroll-behavior: smooth;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -121,31 +127,27 @@ footer {
   .container {
     padding: auto 60px;
   }
-  #areaProdutos {
-    grid-template-columns: repeat(2, 47.5%);
-    gap: 5%;
-    margin-bottom: 60px;
-  }
 
-  .btnCarrinho {
-    margin: 2em 0 1em 0;
+  #areaProdutos {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
 }
 /*media size adaptations to desktops and tablets on landscape mode*/
 @media screen and (min-width: 1024px), (min-width: 641px) and (max-width: 1023px) and (orientation:landscape){/*last part after de comma if's a tablet at landscope mode*/
 
-  #areaProdutos {
-    grid-template-columns: repeat(4, 23.5%);
-    gap: 2%;
+  .container {
+    padding: auto 120px;
   }
 
-  .btnCarrinho {
-    margin: 2em 0 1em 0;
+  #areaProdutos {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
   }
 
   #sobre {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 5%;
+    gap: 20px;
   }
 }
